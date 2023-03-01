@@ -1,0 +1,4 @@
+Pembelajaran materi hari ini :
+1. github
+2. perintah perintah pada github
+3. proses instalasi git bash
