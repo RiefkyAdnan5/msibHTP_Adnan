@@ -1,4 +1,7 @@
 Pembelajaran materi hari ini :
 1. github
-2. perintah perintah pada github
-3. proses instalasi git bash
+2. Cara membuat repository
+3. Cara mengedit file
+4. Cara melakukan merge
+5. perintah pada github
+6. proses instalasi git bash
