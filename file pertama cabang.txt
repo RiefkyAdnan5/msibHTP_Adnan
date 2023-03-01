@@ -1,0 +1,5 @@
+ini adalah rincian materi baru:
+1. html dan css
+2. github
+3. js
+4. 

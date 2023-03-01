@@ -4,3 +4,4 @@ Rincian materi pelatihan:
 3. github
 4. php
 5. javascript
+6. rest API
