@@ -1,0 +1,4 @@
+Penjelasan tag pada html:
+1. tag P untuk paragraf
+2. tag h1-h5 untuk header
+3. tag strong untuk menebalkan huruf
