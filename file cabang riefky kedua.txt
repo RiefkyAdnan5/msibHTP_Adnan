@@ -1,0 +1,4 @@
+Jenis-jenis selector dalam css:
+1. Selector tag, misal (nama_tag {properti: value;}
+2. Selector id, misal (#nama_id {properti: value;}
+3. Selector class, misal (.nama_class {properti: value;}
