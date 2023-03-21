@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <button class="hideBtn">Hide</button>
+    <button class="showBtn">Show</button>
+    
+    <div class="images">
+        <img src="img/gambar.jpeg" width="300px">
+        <img src="img/gambar2.jpg" width="400px">
+        <img src="img/gambar3.jpg" width="320px">
+    </div>
+    
+    <script>
+    $(document).ready(function() {
+        $(".hideBtn").click(function() {
+        $(".images").hide('slow');
+        });
+    
+        $(".showBtn").click(function() {
+        $(".images").show('slow');
+        }); 
+    });
+    </script>
+
+</body>
+</html>
