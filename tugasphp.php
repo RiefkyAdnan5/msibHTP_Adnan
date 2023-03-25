@@ -47,6 +47,7 @@
 
         echo 'Nama : '.$nama;
         echo '<br>Jabatan : '.$jabatan;
+        echo '<br>Gaji Pokok : '.$gaji_pokok;
         echo '<br>Tunjangan Jabatan : '.$tunjangan_jbt;
         echo '<br>Tunjangan Keluarga : '.$tunjangan_klg;
         echo '<br>Gaji Kotor : '.$total;
