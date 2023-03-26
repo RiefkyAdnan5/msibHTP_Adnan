@@ -41,7 +41,7 @@
 
         $tunjangan_jbt = $gaji_pokok * 0.2;
         $total = $gaji_pokok + $tunjangan_klg + $tunjangan_jbt;
-        $zakat = ($total >= 6000000) ? $total * 0.025 : 'null' ;
+        $zakat = ($total >= 6000000) ? $total * 0.025 : 0 ;
         $gaji_bersih = $total - $zakat;
 
 
