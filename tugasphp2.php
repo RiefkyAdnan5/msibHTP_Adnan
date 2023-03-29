@@ -25,37 +25,36 @@
 <button name="proses" type="submit">Simpan</button>
 </form>
 <?php
-$nama = $_POST ['nama'];
-$matakuliah = $_POST['matkul'];
-$nilai = $_POST['nilai'];
-$tombol = $_POST['proses'];
+if(isset($_POST['proses'])){
+    $nama = $_POST ['nama'];
+    $matakuliah = $_POST['matkul'];
+    $nilai = $_POST['nilai'];
+    $tombol = $_POST['proses'];
 
-$ket = ($nilai >= 60) ? "lulus" : "gagal";
-if($nilai >= 85 && $nilai <= 100) $grade = "A";
-else if ($nilai >= 75 && $nilai <= 84) $grade = "B";
-else if ($nilai >= 60 && $nilai <= 74) $grade = "C";
-else if ($nilai >= 30 && $nilai <= 59) $grade = "D";
-else if ($nilai >= 0 && $nilai <= 29) $grade = "E";
-else $grade = "";
+    $ket = ($nilai >= 60) ? "lulus" : "gagal";
+    if($nilai >= 85 && $nilai <= 100) $grade = "A";
+    else if ($nilai >= 75 && $nilai <= 84) $grade = "B";
+    else if ($nilai >= 60 && $nilai <= 74) $grade = "C";
+    else if ($nilai >= 30 && $nilai <= 59) $grade = "D";
+    else if ($nilai >= 0 && $nilai <= 29) $grade = "E";
+    else $grade = "";
 
-switch ($grade){
-    case "A" : $predikat = "memuaskan"; break;
-    case "B" : $predikat = "Bagus"; break;
-    case "C" : $predikat = "Cukup"; break;
-    case "D" : $predikat = "Kurang"; break;
-    case "E" : $predikat = "Buruk"; break;
-    default: $predikat ="";
+    switch ($grade){
+        case "A" : $predikat = "memuaskan"; break;
+        case "B" : $predikat = "Bagus"; break;
+        case "C" : $predikat = "Cukup"; break;
+        case "D" : $predikat = "Kurang"; break;
+        case "E" : $predikat = "Buruk"; break;
+        default: $predikat ="";
+    }
+
+    echo 'Nama Mahasiswa : '.$nama;
+    echo '<br>Matakuliah : '.$matakuliah;
+    echo '<br>Nilai : '.$nilai;
+    echo '<br>Keterangan : '.$ket;
+    echo '<br>Grade : '.$grade;
+    echo '<br>Predikat : '.$predikat;
 }
-if(isset($tombol)){
-?>
-Nama Mahasiswa : <?= $nama ?>
-<br> Matakuliah : <?= $matakuliah ?>
-<br> Nilai : <?= $nilai ?>
-<br> Keterangan : <?= $ket ?>
-<br> Grade : <?= $grade ?>
-<br> predikat : <?= $predikat ?>
-
-<?php } ?>
-    
+?>    
 </body>
 </html>
