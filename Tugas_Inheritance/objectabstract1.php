@@ -9,6 +9,7 @@ $b3 = new segitiga();
 
 $ar_bidang = [$b1,$b2,$b3];
 foreach($ar_bidang as $bidang){
+    echo '<br>'.$bidang->namaBidang();
     echo '<br>'.$bidang->luasBidang();
     echo '<br>'.$bidang->kelilingBidang();
 }
