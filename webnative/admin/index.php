@@ -7,7 +7,7 @@ include_once 'menu.php';
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-            <h1>Selamat Datang di web admin</h1>
+            
             <?php
             $url = $_GET['url'];
             if($url == 'dashboard'){

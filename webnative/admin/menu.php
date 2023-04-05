@@ -17,8 +17,8 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="index.php?url=product">Data Produk</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">About</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Contact</a>
+                                    <a class="nav-link" href="index.php?url=about">About</a>
+                                    <a class="nav-link" href="index.php?url=contact">Contact</a>
                                     <a class="nav-link" href="index.php?url=data">Data</a>
                                 </nav>
                             </div>
