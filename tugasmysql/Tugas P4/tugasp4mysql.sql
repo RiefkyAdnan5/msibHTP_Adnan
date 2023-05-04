@@ -60,7 +60,7 @@ SELECT id, kode, nama,
 
 //soal 3.4
 //Tampilkan data statistik jumlah tempat lahir pelanggan
-
+SELECT COUNT(*) AS jml_tmplahir FROM pelanggan WHERE tmp_lahir = 'jakarta';
 //Tampilkan jumlah statistik produk berdasarkan jenis produk
 
 //Tampilkan data pelanggan yang usianya dibawah rata usia pelanggan

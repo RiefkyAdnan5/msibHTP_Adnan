@@ -1,0 +1,46 @@
+TUGAS 7
+
+-- Buat fungsi inputPelanggan(), setelah itu panggil fungsinya
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE PROCEDURE inputPelanggan(kode varchar(10), nama varchar(45), jk char(1), tmp_lahir varchar(30), tgl_lahir date, email varchar (45), kartu_id int(11))
+    -> BEGIN
+    -> INSERT INTO pelanggan (kode,nama,jk,tmp_lahir,tgl_lahir,email,kartu_id) VALUES (kode,nama,jk,tmp_lahir,tgl_lahir,email,kartu_id);
+    -> END$$
+
+MariaDB [dbkoperasi]> DELIMITER ;
+MariaDB [dbkoperasi]> CALL inputPelanggan('C011','Riefky','L','Jakarta','2000-02-02','riefky@gmail.com','2');
+
+-- Buat fungsi showPelanggan(), setelah itu panggil fungsinya
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE PROCEDURE showPelanggan()
+    -> BEGIN
+    -> SELECT kode,nama,jk,tmp_lahir,tgl_lahir,email,kartu_id FROM pelanggan;
+    -> END
+    -> $$
+
+MariaDB [dbkoperasi]> DELIMITER ;
+MariaDB [dbkoperasi]> CALL showPelanggan();
+
+
+-- Buat fungsi inputProduk(), setelah itu panggil fungsinya
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE PROCEDURE inputProduk(kode varchar(10), nama varchar(45), harga_beli double, harga_jual double, stok int(11), min_stok int(11), jenis_produk_id int(11))
+    -> BEGIN
+    -> INSERT INTO produk (kode,nama,harga_beli,harga_jual,stok,min_stok,jenis_produk_id) VALUES (kode,nama,harga_beli,harga_jual,stok,min_stok,jenis_produk_id);
+    -> END$$
+
+MariaDB [dbkoperasi]> DELIMITER ;
+MariaDB [dbkoperasi]> CALL inputProduk('L005','Laptop Lenovo','9000000','10000000','15','4','5');
+
+-- Buat fungsi showProduk(), setelah itu panggil fungsinya
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE PROCEDURE showProduk()
+    -> BEGIN
+    -> SELECT kode,nama,harga_beli,harga_jual,stok,min_stok,jenis_produk_id FROM produk;
+    -> END$$
+Query OK, 0 rows affected (0.037 sec)
+
+MariaDB [dbkoperasi]> DELIMITER ;
+MariaDB [dbkoperasi]> CALL showProduk();
+
+-- Buat fungsi totalPesanan(), setelah itu panggil fungsinya
