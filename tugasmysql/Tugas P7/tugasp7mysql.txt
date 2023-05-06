@@ -44,3 +44,8 @@ MariaDB [dbkoperasi]> DELIMITER ;
 MariaDB [dbkoperasi]> CALL showProduk();
 
 -- Buat fungsi totalPesanan(), setelah itu panggil fungsinya
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE PROCEDURE totalPesanan()
+    -> BEGIN
+    -> SELECT total FROM pesanan;
+    -> END$$
