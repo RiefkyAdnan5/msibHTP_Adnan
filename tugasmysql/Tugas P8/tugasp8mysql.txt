@@ -1,0 +1,12 @@
+MariaDB [dbkoperasi]> DELIMITER $$
+MariaDB [dbkoperasi]> CREATE TRIGGER pembelian_pesanan BEFORE INSERT ON pembayaran
+    -> FOR EACH ROW
+    -> BEGIN
+    -> SET @bayar = (SELECT total FROM pesanan WHERE id = NEW.pesanan.id
+);
+    -> IF @bayar < 0 THEN
+    -> SIGNAL SQLSTATE '45000' MESSAGE_TEXT = 'Warning: pembayaran belum
+ dilakukan';
+    -> END IF;
+    -> END$4
+    -> END$$
